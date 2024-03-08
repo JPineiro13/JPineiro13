@@ -1,0 +1,96 @@
+gitpod /workspace/JPineiro13 (main) $ pwd
+/workspace/JPineiro13
+gitpod /workspace/JPineiro13 (main) $ mkdir prueba1
+gitpod /workspace/JPineiro13 (main) $ ls -l
+total 156
+-rw-r--r-- 1 gitpod gitpod 64308 Mar  8 15:34 4geeks_calculo_algebra.ipynb
+-rw-r--r-- 1 gitpod gitpod  5368 Mar  8 15:34 4geeks_distribucion_probabilidad.ipynb
+-rw-r--r-- 1 gitpod gitpod 40496 Mar  8 15:34 4geeks_estadistica_descriptiva.ipynb
+-rw-r--r-- 1 gitpod gitpod 12907 Mar  8 15:34 4geeks_limpieza_bienes_raices.ipynb
+-rw-r--r-- 1 gitpod gitpod  5371 Mar  8 15:34 4geeks_optimizacion_de_algoritmos.ipynb
+-rw-r--r-- 1 gitpod gitpod  5401 Mar  8 15:34 4geeks_probabilidad.ipynb
+-rw-r--r-- 1 gitpod gitpod  6377 Mar  8 15:34 4geeks_testeo_hipotesis.ipynb
+drwxr-xr-x 2 gitpod gitpod     6 Mar  8 15:46 prueba1
+-rw-r--r-- 1 gitpod gitpod   492 Mar  8 15:34 README.md
+gitpod /workspace/JPineiro13 (main) $ cd prueba1
+gitpod /workspace/JPineiro13/prueba1 (main) $ cd ..
+gitpod /workspace/JPineiro13 (main) $ touch archivo_nuevo.txt
+gitpod /workspace/JPineiro13 (main) $ ls -l
+total 156
+-rw-r--r-- 1 gitpod gitpod 64308 Mar  8 15:34 4geeks_calculo_algebra.ipynb
+-rw-r--r-- 1 gitpod gitpod  5368 Mar  8 15:34 4geeks_distribucion_probabilidad.ipynb
+-rw-r--r-- 1 gitpod gitpod 40496 Mar  8 15:34 4geeks_estadistica_descriptiva.ipynb
+-rw-r--r-- 1 gitpod gitpod 12907 Mar  8 15:34 4geeks_limpieza_bienes_raices.ipynb
+-rw-r--r-- 1 gitpod gitpod  5371 Mar  8 15:34 4geeks_optimizacion_de_algoritmos.ipynb
+-rw-r--r-- 1 gitpod gitpod  5401 Mar  8 15:34 4geeks_probabilidad.ipynb
+-rw-r--r-- 1 gitpod gitpod  6377 Mar  8 15:34 4geeks_testeo_hipotesis.ipynb
+-rw-r--r-- 1 gitpod gitpod     0 Mar  8 15:51 archivo_nuevo.txt
+drwxr-xr-x 2 gitpod gitpod     6 Mar  8 15:46 prueba1
+-rw-r--r-- 1 gitpod gitpod   492 Mar  8 15:34 README.md
+gitpod /workspace/JPineiro13 (main) $ nano archivo_nuevo.txt
+gitpod /workspace/JPineiro13 (main) $ ls -l
+total 160
+-rw-r--r-- 1 gitpod gitpod 64308 Mar  8 15:34 4geeks_calculo_algebra.ipynb
+-rw-r--r-- 1 gitpod gitpod  5368 Mar  8 15:34 4geeks_distribucion_probabilidad.ipynb
+-rw-r--r-- 1 gitpod gitpod 40496 Mar  8 15:34 4geeks_estadistica_descriptiva.ipynb
+-rw-r--r-- 1 gitpod gitpod 12907 Mar  8 15:34 4geeks_limpieza_bienes_raices.ipynb
+-rw-r--r-- 1 gitpod gitpod  5371 Mar  8 15:34 4geeks_optimizacion_de_algoritmos.ipynb
+-rw-r--r-- 1 gitpod gitpod  5401 Mar  8 15:34 4geeks_probabilidad.ipynb
+-rw-r--r-- 1 gitpod gitpod  6377 Mar  8 15:34 4geeks_testeo_hipotesis.ipynb
+-rw-r--r-- 1 gitpod gitpod    95 Mar  8 15:55 archivo_nuevo.txt
+drwxr-xr-x 2 gitpod gitpod     6 Mar  8 15:46 prueba1
+-rw-r--r-- 1 gitpod gitpod   492 Mar  8 15:34 README.md
+gitpod /workspace/JPineiro13 (main) $ mkdir prueba2
+gitpod /workspace/JPineiro13 (main) $ mv archivo_nuevo.txt prueba2/archivo_movido.txt
+gitpod /workspace/JPineiro13 (main) $ nano saludar.sh
+gitpod /workspace/JPineiro13 (main) $ bash saludar.sh 
+hola
+hoy es
+Fri Mar  8 04:04:12 PM UTC 2024
+gitpod /workspace/JPineiro13 (main) $ ./saludar.sh
+bash: ./saludar.sh: Permission denied
+gitpod /workspace/JPineiro13 (main) $ chmod +x saludar.sh
+gitpod /workspace/JPineiro13 (main) $ ./saludar.sh
+hola
+hoy es
+Fri Mar  8 04:05:12 PM UTC 2024
+gitpod /workspace/JPineiro13 (main) $ cd prueba2
+gitpod /workspace/JPineiro13/prueba2 (main) $ cp archivo_movido.txt copia_archivo_movido.txt
+gitpod /workspace/JPineiro13/prueba2 (main) $ ls -l
+total 8
+-rw-r--r-- 1 gitpod gitpod 95 Mar  8 15:55 archivo_movido.txt
+-rw-r--r-- 1 gitpod gitpod 95 Mar  8 16:08 copia_archivo_movido.txt
+gitpod /workspace/JPineiro13/prueba2 (main) $ nano saludar.py
+gitpod /workspace/JPineiro13/prueba2 (main) $ python3 saludar.py
+Hola desde python
+gitpod /workspace/JPineiro13/prueba2 (main) $ rm copia_archivo_movido.txt 
+gitpod /workspace/JPineiro13/prueba2 (main) $ ls -l
+total 8
+-rw-r--r-- 1 gitpod gitpod 95 Mar  8 15:55 archivo_movido.txt
+-rw-r--r-- 1 gitpod gitpod 27 Mar  8 16:09 saludar.py
+gitpod /workspace/JPineiro13/prueba2 (main) $ cat saludar.sh
+cat: saludar.sh: No such file or directory
+gitpod /workspace/JPineiro13/prueba2 (main) $ cd ..
+gitpod /workspace/JPineiro13 (main) $ cat saludar.sh
+echo hola
+echo hoy es
+date
+gitpod /workspace/JPineiro13 (main) $ wget https://wordpress.org/latest.zip
+--2024-03-08 16:15:24--  https://wordpress.org/latest.zip
+Resolving wordpress.org (wordpress.org)... 198.143.164.252
+Connecting to wordpress.org (wordpress.org)|198.143.164.252|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 25960271 (25M) [application/zip]
+Saving to: ‘latest.zip’
+
+latest.zip                            100%[=======================================================================>]  24.76M  18.0MB/s    in 1.4s    
+
+2024-03-08 16:15:26 (18.0 MB/s) - ‘latest.zip’ saved [25960271/25960271]
+
+gitpod /workspace/JPineiro13 (main) $ mkdir prueba3
+gitpod /workspace/JPineiro13 (main) $ mv latest.zip prueba3/.
+gitpod /workspace/JPineiro13 (main) $ cd prueba3
+gitpod /workspace/JPineiro13/prueba3 (main) $ ls -l
+total 25352
+-rw-r--r-- 1 gitpod gitpod 25960271 Jan 30 19:28 latest.zip
+gitpod /workspace/JPineiro13/prueba3 (main) $ tar -zxvf latest.zip
